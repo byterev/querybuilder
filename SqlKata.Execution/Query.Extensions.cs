@@ -365,13 +365,6 @@ namespace SqlKata.Execution
         {
             var factory = new QueryFactory(xQuery.Connection, xQuery.Compiler, QueryFactory.DEFAULT_TIMEOUT, xQuery.TransactionWrapper);
 
-            factory.TransactionWrapper = xQuery.TransactionWrapper;
-
-            if (factory.TransactionWrapper == null)
-            {
-                factory.TransactionWrapper = new TransactionWrapper(xQuery.Connection, xQuery.Compiler);
-            }
-
             factory.Logger = xQuery.Logger;
 
             return factory;

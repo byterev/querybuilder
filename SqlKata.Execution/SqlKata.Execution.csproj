@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>SqlKata.Execution</PackageId>
+    <PackageId>ByteRev.SqlKata.Execution</PackageId>
     <PackageTags>sql;query-builder;dynamic-query</PackageTags>
     <Title>SqlKata The C# Sql Query Builder</Title>
     <Description>Adds the execution capabilities for SqlKata</Description>
-    <Authors>Ahmad Moussawi</Authors>
+    <Authors>Ahmad Moussawi, Stéphane Marques</Authors>
     <Copyright>Copyright (c) 2017 Ahmad Moussawi</Copyright>
     <TargetFrameworks>netstandard1.0;net45</TargetFrameworks>
     <RootNamespace>SqlKata</RootNamespace>
@@ -18,5 +18,10 @@
   </ItemGroup>
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net451</TargetFrameworks>
+    <PackageProjectUrl>https://github.com/byterev/querybuilder</PackageProjectUrl>
+    <AssemblyName>ByteRev.SqlKata.Execution</AssemblyName>
+    <PackageReleaseNotes>https://github.com/sqlkata/querybuilder
+https://github.com/byterev/querybuilder</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 </Project>
