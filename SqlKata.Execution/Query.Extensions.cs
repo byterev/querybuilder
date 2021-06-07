@@ -278,7 +278,7 @@ namespace SqlKata.Execution
             return db.Execute(query.AsDelete(), db.TransactionWrapper.Transaction ?? transaction, timeout);
         }
 
-        public static async Task<int> DeleteAsync(this Query query, IDbTransaction transaction = null, int? timeout = null, CancellationToken cancellationToken = default))
+        public static async Task<int> DeleteAsync(this Query query, IDbTransaction transaction = null, int? timeout = null, CancellationToken cancellationToken = default)
         {
             var db = CreateQueryFactory(query);
             return await db.ExecuteAsync(query.AsDelete(), db.TransactionWrapper.Transaction ?? transaction, timeout,cancellationToken);
@@ -374,8 +374,8 @@ namespace SqlKata.Execution
 
         internal static QueryFactory CreateQueryFactory(XQuery xQuery)
         {
-            //var factory = new QueryFactory(xQuery.Connection, xQuery.Compiler, QueryFactory.DEFAULT_TIMEOUT, xQuery.TransactionWrapper);
-            var factory = new QueryFactory(xQuery.Connection, xQuery.Compiler, xQuery.TransactionWrapper);
+            var factory = new QueryFactory(xQuery.Connection, xQuery.Compiler, QueryFactory.DEFAULT_TIMEOUT, xQuery.TransactionWrapper);
+            //var factory = new QueryFactory(xQuery.Connection, xQuery.Compiler, xQuery.TransactionWrapper);
 
             factory.Logger = xQuery.Logger;
 

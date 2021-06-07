@@ -2,13 +2,15 @@
   <PropertyGroup>
     <Title>SqlKata The C# Sql Query Builder</Title>
     <Description>Adds the execution capabilities for SqlKata</Description>
-    <Authors>Ahmad Moussawi</Authors>
+    <Authors>Ahmad Moussawi, Stéphane Marques</Authors>
     <Copyright>Copyright (c) 2017 Ahmad Moussawi</Copyright>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <RootNamespace>SqlKata</RootNamespace>
+    <PackageVersion>2.3.2</PackageVersion>
 
     <!-- NuGet settings -->
-    <PackageId>SqlKata.Execution</PackageId>
+    <!--
+    <PackageId>ByteRev.SqlKata.Execution</PackageId>
     <PackageTags>sql;query-builder;dynamic-query</PackageTags>
     <PackageReleaseNotes>https://github.com/sqlkata/querybuilder</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/sqlkata/querybuilder</PackageProjectUrl>
@@ -16,10 +18,13 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/sqlkata/querybuilder</RepositoryUrl>
+    -->
 
     <!-- SourceLink settings -->
+    <!--
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    -->
 
 
   </PropertyGroup>
@@ -30,4 +35,12 @@
     <PackageReference Include="dapper" Version="1.50.5" />
     <PackageReference Include="Humanizer.Core" Version="2.8.26" />
   </ItemGroup>
+  
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <PackageProjectUrl>https://github.com/byterev/querybuilder</PackageProjectUrl>
+    <AssemblyName>ByteRev.SqlKata.Execution</AssemblyName>
+    <PackageReleaseNotes>https://github.com/sqlkata/querybuilder
+      https://github.com/byterev/querybuilder</PackageReleaseNotes>
+  </PropertyGroup>
 </Project>
